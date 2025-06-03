@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular9": {
+    "NgxDaterangepickerLibrary": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -122,38 +122,38 @@
         }
       }
     },
-    "ng2-daterangepicker": {
+    "NgxDaterangepicker": {
       "projectType": "library",
-      "root": "projects/ng2-daterangepicker",
-      "sourceRoot": "projects/ng2-daterangepicker/src",
+      "root": "projects/ngx-daterangepicker",
+      "sourceRoot": "projects/ngx-daterangepicker/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/ng2-daterangepicker/tsconfig.lib.json",
-            "project": "projects/ng2-daterangepicker/ng-package.json"
+            "tsConfig": "projects/ngx-daterangepicker/tsconfig.lib.json",
+            "project": "projects/ngx-daterangepicker/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ng2-daterangepicker/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ngx-daterangepicker/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ng2-daterangepicker/src/test.ts",
-            "tsConfig": "projects/ng2-daterangepicker/tsconfig.spec.json",
-            "karmaConfig": "projects/ng2-daterangepicker/karma.conf.js"
+            "main": "projects/ngx-daterangepicker/src/test.ts",
+            "tsConfig": "projects/ngx-daterangepicker/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-daterangepicker/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/ng2-daterangepicker/tsconfig.lib.json",
-              "projects/ng2-daterangepicker/tsconfig.spec.json"
+              "projects/ngx-daterangepicker/tsconfig.lib.json",
+              "projects/ngx-daterangepicker/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"

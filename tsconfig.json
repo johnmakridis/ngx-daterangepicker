@@ -20,9 +20,9 @@
       "dom"
     ],
     "paths": {
-      "ng2-daterangepicker": [
-        "dist/ng2-daterangepicker/ng2-daterangepicker",
-        "dist/ng2-daterangepicker"
+      "ngx-daterangepicker": [
+        "dist/ngx-daterangepicker/ngx-daterangepicker",
+        "dist/ngx-daterangepicker"
       ]
     }
   },
