@@ -1,13 +1,19 @@
 {
-  "name": "angular9",
-  "version": "0.0.0",
+  "name": "@johnmakridis/ngx-daterangepicker",
+  "version": "9.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "watch": "ng build --watch --configuration development",
+    "lint": "tslint -p tsconfig.json",
+    "prepublishOnly": "npm run lint && npm run build:module",
+    "preversion": "npm run lint",
+    "version": "git add .",
+    "postversion": "git push && git push --tags",
+    "prebuild:module": "shx rm -rf dist",
+    "build:module": "ng build NgxDaterangepicker -c production",
+    "build:publish": "npm run build:module && cd dist/ngx-daterangepicker && npm publish --access public"
   },
   "private": true,
   "dependencies": {

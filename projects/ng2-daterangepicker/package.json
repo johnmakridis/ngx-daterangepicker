@@ -1,6 +1,6 @@
 {
-  "name": "ng2-daterangepicker",
-  "version": "3.0.1",
+  "name": "@johnmakridis/ngx-daterangepicker",
+  "version": "9.0.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/evansmwendwa/ng2-daterangepicker"
@@ -20,5 +20,7 @@
     "jquery": "^3.4.1",
     "@types/jquery": "^3.3.32"
   },
-  "sideEffects": ["*.css"]
+  "sideEffects": [
+    "*.css"
+  ]
 }
