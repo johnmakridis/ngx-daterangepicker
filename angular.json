@@ -74,18 +74,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "NgxDaterangepickerLibrary:build"
+            "buildTarget": "NgxDaterangepickerLibrary:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "NgxDaterangepickerLibrary:build:production"
+              "buildTarget": "NgxDaterangepickerLibrary:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "NgxDaterangepickerLibrary:build"
+            "buildTarget": "NgxDaterangepickerLibrary:build"
           }
         },
         "test": {
