@@ -1,22 +1,14 @@
 import {
-  Directive,
-  AfterViewInit,
-  OnDestroy,
-  DoCheck,
-  Input,
-  Output,
-  EventEmitter,
-  ElementRef,
-  KeyValueDiffers
+  Directive, AfterViewInit, OnDestroy, DoCheck, Input, Output, EventEmitter, ElementRef, KeyValueDiffers
 } from '@angular/core';
 import 'daterangepicker';
 import $ from 'jquery';
 import { DaterangepickerConfig } from './ngx-daterangepicker.service';
 
 @Directive({
-    // tslint:disable-next-line:directive-selector
-    selector: '[daterangepicker]',
-    standalone: false
+  // tslint:disable-next-line:directive-selector
+  selector: '[daterangepicker]',
+  standalone: false
 })
 // tslint:disable-next-line:directive-class-suffix
 export class DaterangepickerComponent implements AfterViewInit, OnDestroy, DoCheck {
