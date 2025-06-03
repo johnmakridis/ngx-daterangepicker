@@ -29,8 +29,8 @@
     "version": "git add .",
     "postversion": "git push && git push --tags",
     "prebuild:module": "shx rm -rf dist",
-    "build:module": "ng build NgxAceEditor -c production",
-    "build:publish": "npm run build:module && cd dist/ngx-ace-editor && npm publish --access public"
+    "build:module": "ng build NgxDaterangepicker -c production",
+    "build:publish": "npm run build:module && cd dist/ngx-daterangepicker && npm publish --access public"
   },
   "dependencies": {
     "@angular/animations": "~12.2.17",
