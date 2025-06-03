@@ -1,6 +1,6 @@
 {
   "name": "ng2-daterangepicker",
-  "version": "3.0.1",
+  "version": "10.0.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/evansmwendwa/ng2-daterangepicker"
@@ -11,14 +11,16 @@
   "homepage": "https://github.com/evansmwendwa/ng2-daterangepicker#readme",
   "license": "MIT",
   "dependencies": {
-    "daterangepicker": "^3.0.5"
+    "daterangepicker": "^3.0.5",
+    "tslib": "^2.0.0"
   },
   "peerDependencies": {
     "@angular/common": "^9.0.1",
     "@angular/core": "^9.0.1",
-    "tslib": "^1.10.0",
     "jquery": "^3.4.1",
     "@types/jquery": "^3.3.32"
   },
-  "sideEffects": ["*.css"]
+  "sideEffects": [
+    "*.css"
+  ]
 }
