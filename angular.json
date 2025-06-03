@@ -30,7 +30,8 @@
             ],
             "allowedCommonJsDependencies": [
               "daterangepicker",
-              "jquery"
+              "jquery",
+              "moment"
             ],
             "vendorChunk": true,
             "extractLicenses": false,
@@ -134,6 +135,5 @@
         }
       }
     }
-  },
-  "defaultProject": "NgxDaterangepickerLibrary"
+  }
 }
