@@ -14,8 +14,9 @@ import $ from 'jquery';
 import { DaterangepickerConfig } from './ngx-daterangepicker.service';
 
 @Directive({
-  // tslint:disable-next-line:directive-selector
-  selector: '[daterangepicker]'
+    // tslint:disable-next-line:directive-selector
+    selector: '[daterangepicker]',
+    standalone: false
 })
 // tslint:disable-next-line:directive-class-suffix
 export class DaterangepickerComponent implements AfterViewInit, OnDestroy, DoCheck {
