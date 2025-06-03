@@ -1,5 +1,5 @@
 {
-  "name": "angular9",
+  "name": "@johnmakridis/ngx-daterangepicker",
   "version": "11.0.0",
   "scripts": {
     "ng": "ng",

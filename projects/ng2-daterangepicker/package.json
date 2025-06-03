@@ -1,5 +1,5 @@
 {
-  "name": "ng2-daterangepicker",
+  "name": "@johnmakridis/ngx-daterangepicker",
   "version": "11.0.0",
   "repository": {
     "type": "git",
