@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { DaterangepickerComponent } from './ng2-daterangepicker.component';
+import { DaterangepickerComponent } from './ngx-daterangepicker.component';
 
 @NgModule({
   declarations: [DaterangepickerComponent],

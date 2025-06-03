@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import moment from 'moment';
-import { DaterangepickerConfig } from "ng2-daterangepicker";
+import { DaterangepickerConfig } from 'projects/ngx-daterangepicker/src/public-api';
 
 @Component({
   selector: 'app-root',
@@ -19,18 +19,24 @@ export class AppComponent {
     opens: 'left',
     startDate: moment().subtract(5, 'day'),
     endDate: moment(),
-    isInvalidDate: function (date: any) {
-      if (date.isSame('2017-09-26', 'day'))
+    isInvalidDate: (date: any) => {
+
+      if (date.isSame('2017-09-26', 'day')) {
         return 'mystyle';
+      }
+
       return false;
+
     }
-  }
+
+  };
 
   constructor(private daterangepickerOptions: DaterangepickerConfig) {
     this.daterangepickerOptions.settings = {
       locale: { format: 'YYYY-MM-DD' },
       alwaysShowCalendars: false,
-      "opens": "right",
+      // tslint:disable-next-line:object-literal-key-quotes
+      'opens': 'right',
       ranges: {
         'Last Month': [moment().subtract(1, 'month'), moment()],
         'Last 3 Months': [moment().subtract(4, 'month'), moment()],
