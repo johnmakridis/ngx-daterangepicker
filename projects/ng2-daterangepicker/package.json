@@ -1,15 +1,22 @@
 {
   "name": "@johnmakridis/ngx-daterangepicker",
   "version": "11.0.0",
+  "author": {
+    "name": "John Makridis",
+    "url": "https://johnmakridis.github.io",
+    "github": "https://github.com/johnmakridis"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/evansmwendwa/ng2-daterangepicker"
+    "url": "https://github.com/johnmakridis/ngx-ace-editor"
   },
-  "bugs": {
-    "url": "https://github.com/evansmwendwa/ng2-daterangepicker/issues"
-  },
-  "homepage": "https://github.com/evansmwendwa/ng2-daterangepicker#readme",
+  "homepage": "https://johnmakridis.github.io",
   "license": "MIT",
+  "keywords": [
+    "Ace Editor",
+    "Angular",
+    "ngx-ace-editor"
+  ],
   "dependencies": {
     "daterangepicker": "^3.0.5",
     "tslib": "^2.0.0"

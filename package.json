@@ -1,14 +1,37 @@
 {
   "name": "@johnmakridis/ngx-daterangepicker",
   "version": "11.0.0",
+  "private": true,
+  "author": {
+    "name": "John Makridis",
+    "url": "https://johnmakridis.github.io",
+    "github": "https://github.com/johnmakridis"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johnmakridis/ngx-daterangepicker"
+  },
+  "homepage": "https://johnmakridis.github.io",
+  "license": "MIT",
+  "keywords": [
+    "Daterangepicker",
+    "Angular",
+    "ngx-daterangepicker"
+  ],
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint"
+    "watch": "ng build --watch --configuration development",
+    "lint": "tslint -p tsconfig.json",
+    "prepublishOnly": "npm run lint && npm run build:module",
+    "preversion": "npm run lint",
+    "version": "git add .",
+    "postversion": "git push && git push --tags",
+    "prebuild:module": "shx rm -rf dist",
+    "build:module": "ng build NgxAceEditor -c production",
+    "build:publish": "npm run build:module && cd dist/ngx-ace-editor && npm publish --access public"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "~11.2.14",
     "@angular/common": "~11.2.14",
