@@ -1,6 +1,6 @@
 {
   "name": "@johnmakridis/ngx-daterangepicker",
-  "version": "19.0.0",
+  "version": "20.0.0",
   "author": {
     "name": "John Makridis",
     "url": "https://johnmakridis.github.io",
@@ -22,8 +22,8 @@
     "tslib": "^2.0.0"
   },
   "peerDependencies": {
-    "@angular/common": "^19.2.14",
-    "@angular/core": "^19.2.14",
+    "@angular/common": "^20.0.0",
+    "@angular/core": "^20.0.0",
     "jquery": "^3.4.1",
     "@types/jquery": "^3.3.32"
   },
