@@ -3,11 +3,23 @@ ngx-daterangepicker
 
 ![Daterange Picker](https://raw.githubusercontent.com/johnmakridis/ngx-daterangepicker/master/projects/ngx-daterangepicker/assets/screen-shot.png)
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.1.
 
-## Version 3.0.0 adds support for Angular 9.0 Ivy compiler
+### Versions
 
-I have not made efforts to test earlier versions of angular with version 3.x of this package but it should still work.
+| Angular          | @johnmakridis/ngx-daterangepicker |
+|------------------|:---------:|
+| >=20.0.0 <21.0.0 |   v20.x   |
+| >=19.0.0 <20.0.0 |   v19.x   |
+| >=18.0.0 <19.0.0 |   v18.x   |
+| >=17.0.0 <18.0.0 |   v17.x   |
+| >=16.0.0 <17.0.0 |   v16.x   |
+| >=15.0.0 <16.0.0 |   v15.x   |
+| >=14.0.0 <15.0.0 |   v14.x    |
+| >=13.0.0 <14.0.0 |   v13.x    |
+| >=12.0.0 <13.0.0 |   v12.x    |
+| >=11.0.0 <12.0.0 |   v11.x    |
+| >=10.0.0 <11.0.0 |   v10.x    |
+
 
 ### Installation
 
@@ -24,8 +36,8 @@ Please note and install the following peerDependencies if necessary for your set
 
 ```json
 "peerDependencies": {
-"@types/jquery": "^3.2.12",
-"jquery": "^3.2.1",
+  "@types/jquery": "^3.2.12",
+  "jquery": "^3.2.1",
 }
 ```
 
@@ -46,7 +58,7 @@ Latest version does not require Bootstrap. You can also skip this and copy the c
 ```json
 {
   "styles": [
-    "node_modules/ngx-daterangepicker/assets/daterangepicker.css"
+    "node_modules/@johnmakridis/ngx-daterangepicker/assets/daterangepicker.css"
   ],
   "scripts": [
     "node_modules/jquery/dist/jquery.min.js"
@@ -216,10 +228,9 @@ export class AppComponent {
 
 Notes
 -----
-* This component was made in the early days of transitioning from JQuery to Angular 2.0 You might want to consider using more modern alternatives
-* Though this package still uses JQuery and Bootstrap it has been updated to support Angular 9 in 2020 (I have not made efforts to test earlier versions of Angular with version 3.0)
+* Though this package still uses JQuery and Bootstrap it has been updated to support Angular 9+
 * If your project is not using JQuery for other features this date picker might not be the best option for your project
-* This package ports the original [Daterangepicker](http://www.daterangepicker.com) by [Dan Grossman](https://github.com/dangrossman) for use in Angular. Angular 9 support starts with `Version 3.x` of this package
+* This package ports the original [Daterangepicker](http://www.daterangepicker.com) by [Dan Grossman](https://github.com/dangrossman) for use in Angular. Angular 9 support starts with `Version 9.x` of this package
 
 Contributing
 ------------
@@ -228,26 +239,15 @@ Contributing
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
 ## Build Development
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## Build Package
 
-Run `ng build ngx-daterangepicker` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `npm run build:module` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Publishing
 
-After building your library with `ng build ngx-daterangepicker`, go to the dist folder `cd dist/ngx-daterangepicker` and run `npm publish`.
+Run `npm run build:module` to publish the module on npm registry.
 
-## Running unit tests
-
-Run `ng test ngx-daterangepicker` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
