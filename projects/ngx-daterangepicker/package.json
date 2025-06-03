@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/johnmakridis/ngx-ace-editor"
+    "url": "https://github.com/johnmakridis/ngx-daterangepicker"
   },
   "homepage": "https://johnmakridis.github.io",
   "license": "MIT",
   "keywords": [
-    "Ace Editor",
+    "Daterangepicker",
     "Angular",
-    "ngx-ace-editor"
+    "ngx-daterangepicker"
   ],
   "dependencies": {
     "daterangepicker": "^3.0.5",
