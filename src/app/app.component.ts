@@ -8,7 +8,7 @@ import { DaterangepickerConfig } from 'projects/ngx-daterangepicker/src/public-a
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular9';
+  title = 'ngx-daterangepicker';
 
   public chosenDate: any = {
     start: moment().subtract(12, 'month'),
@@ -20,15 +20,12 @@ export class AppComponent {
     startDate: moment().subtract(5, 'day'),
     endDate: moment(),
     isInvalidDate: (date: any) => {
-
       if (date.isSame('2017-09-26', 'day')) {
         return 'mystyle';
       }
-
       return false;
 
     }
-
   };
 
   constructor(private daterangepickerOptions: DaterangepickerConfig) {
